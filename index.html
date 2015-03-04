@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Phaser Test</title>
+		<meta name="author" content="author name - website" />
+		<meta http-equiv="content-type" content="text/html;charset=iso-8859-1" />
+		<meta name="copyright" content="copyright @" />
+		<meta name="keywords" content="keyword1, keyword2, keyword3" />
+		<meta name="description" content="description" />
+		<meta name="language" content="english" />
+		<meta name="robots" content="all" />
+		<meta name="revisit-after" content="7 days" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
+		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+		<script type="text/javascript" src="js/phaser.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="js/Loadbar.js"></script>
+		<script type="text/javascript" src="js/Menu.js"></script>
+		<script type="text/javascript">
+			myGame.state.add('loadbar',myGame.loadbar);
+			myGame.state.add('menu',myGame.menu);
+			myGame.state.start('menu');
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
