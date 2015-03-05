@@ -6,7 +6,7 @@ myGame.menu.prototype = {
 		var scoreText;
 	},
 	create: function() {
-		scoreText = myGame.add.text(16, 16, 'State Manager: Menu', { fontSize: '32px', fill: '#fff' });
+		scoreText = myGame.add.text(16, 16, 'State Manager: Changed State!', { fontSize: '32px', fill: '#fff' });
 	},
 	update: function() {
 

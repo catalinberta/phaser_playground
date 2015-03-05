@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
-		<title>Phaser Test</title>
+		<title>Phaser State Manager</title>
 		<meta name="author" content="author name - website" />
 		<meta http-equiv="content-type" content="text/html;charset=iso-8859-1" />
 		<meta name="copyright" content="copyright @" />
@@ -20,7 +20,15 @@
 		<script type="text/javascript">
 			myGame.state.add('loadbar',myGame.loadbar);
 			myGame.state.add('menu',myGame.menu);
-			myGame.state.start('menu');
+			myGame.state.start('loadbar');
+			$(function() {
+				setTimeout(function() {
+					$('canvas').click(function() {
+						myGame.state.start('menu');
+					});
+				},500)
+
+			});
 		</script>
 	</head>
 	<body>
