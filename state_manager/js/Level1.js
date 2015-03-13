@@ -6,7 +6,7 @@ Nameless.Level1.prototype = {
 		var scoreText;
 	},
 	create: function() {
-		scoreText = this.add.text(16, 16, 'State Manager: Level1', { fontSize: '32px', fill: '#fff' });
+		scoreText = this.add.text(260, 280, 'State Manager: Level1', { fontSize: '32px', fill: '#fff' });
 	},
 	update: function() {
 
